@@ -17,22 +17,10 @@ class ContatosController {
     ]
 
     def index() {
-
-        response.setHeader("Access-Control-Allow-Origin", "*")
-        response.setHeader("Access-Control-Allow-Credentials", "true" )
-        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE" )
-        response.setHeader("Access-Control-Max-Age", "3600" )
-
         render(contentType: 'text/json') {contatos}
     }
 
     def create() {
-
-        response.setHeader("Access-Control-Allow-Origin", "*")
-        response.setHeader("Access-Control-Allow-Credentials", "true" )
-        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE, PUT" )
-        response.setHeader("Access-Control-Max-Age", "3600" )
-
         def contato = request.JSON
         contato.data = new Date()
         contatos << contato
@@ -40,12 +28,6 @@ class ContatosController {
     }
 
     def operadoras() {
-
-        response.setHeader("Access-Control-Allow-Origin", "*")
-        response.setHeader("Access-Control-Allow-Credentials", "true" )
-        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE" )
-        response.setHeader("Access-Control-Max-Age", "3600" )
-
         render(contentType: 'text/json') {operadoras}
     }
 }

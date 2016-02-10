@@ -1,0 +1,11 @@
+.form-control {
+    margin-bottom: 5px;
+}
+
+.selecionado {
+    background-color: #ffff00;
+}
+
+.negrito {
+    font-weight: bold;
+}

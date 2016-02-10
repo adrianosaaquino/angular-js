@@ -22,7 +22,7 @@ class ContatosController {
 
     def create() {
         def contato = request.JSON
-        contato.data = new Date()
+        // contato.data = new Date()
         contatos << contato
         redirect(action: "index")
     }

@@ -16,9 +16,9 @@ class ContatosController {
             [nome: "Mariana maria das dores de bla", telefone: "9999-9999", cor: 'yellow', data: new Date(), operadora: operadoras[1]]
     ]
 
-    /*def index() {
+    def index() {
         render(contentType: 'text/json') {contatos}
-    }*/
+    }
 
     def create() {
         def contato = request.JSON

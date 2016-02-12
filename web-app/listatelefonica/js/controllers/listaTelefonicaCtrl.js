@@ -9,8 +9,8 @@ angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($s
             success(function(data, status) {
                 $scope.contatos = data;
             }).error(function(data) {
-                $scope.message = "Aconteceu um erro: " + data;
-            });;
+                $scope.error = "Não foi possível carregar os dados!!!";
+            });
     }
 
     var carregarOperadoras = function() {

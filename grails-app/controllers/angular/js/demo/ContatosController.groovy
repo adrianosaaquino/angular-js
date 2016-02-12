@@ -11,9 +11,9 @@ class ContatosController {
     ]
 
     def static contatos = [
-            [nome: "Bruno", telefone: "9999-2222", cor: 'blue', data: new Date(), operadora: operadoras[0]],
-            [nome: "Sandra", telefone: "9999-3333", cor: 'green', data: new Date(), operadora: operadoras[2]],
-            [nome: "Mariana", telefone: "9999-9999", cor: 'yellow', data: new Date(), operadora: operadoras[1]]
+            [nome: "bruno junqueira", telefone: "9999-2222", cor: 'blue', data: new Date(), operadora: operadoras[0]],
+            [nome: "Sandra de jesus", telefone: "9999-3333", cor: 'green', data: new Date(), operadora: operadoras[2]],
+            [nome: "Mariana maria das dores de bla", telefone: "9999-9999", cor: 'yellow', data: new Date(), operadora: operadoras[1]]
     ]
 
     def index() {
